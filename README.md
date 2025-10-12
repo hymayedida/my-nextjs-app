@@ -60,20 +60,15 @@ Build the Docker image on every push to main
 
 Push it to GitHub Container Registry (GHCR)
 
-Tag the image using the format: ghcr.io/<user>/<repo>:latest
-
 Image URL
-ghcr.io/<your-github-username>/<your-repo-name>:latest
-
-
-Replace placeholders with your actual username and repo name.
+ghcr.io/hymayedida/my-nextjs-app:lastest 
 
 ☸️ Kubernetes Deployment (Minikube)
 1. Start Minikube
 minikube start
 
 2. Load the Image into Minikube (if private)
-minikube image load ghcr.io/<user>/<repo>:latest
+minikube image load ghcr.io/hymayedida/my-nextjs-app:latest
 
 
 For public images, Kubernetes can pull directly.
